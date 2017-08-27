@@ -4,7 +4,10 @@
 \alias{gen}
 \title{Generates music from Wesley Safadao}
 \usage{
-gen()
+gen(rand = runif(1))
+}
+\arguments{
+\item{rand}{Random number}
 }
 \description{
 Generates music from Wesley Safadao using keras model

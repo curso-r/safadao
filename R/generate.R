@@ -33,6 +33,8 @@ gerar_txt <- function(model, txt, diversity = 1.0, limit = 300, maxlen = 40) {
 #'
 #' Generates music from Wesley Safadao using keras model
 #'
+#' @param rand Random number
+#'
 #' @export
 gen <- function(rand = runif(1)) {
   gerar_txt(modelo, txt)
