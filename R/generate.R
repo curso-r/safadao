@@ -5,7 +5,7 @@ sample_mod <- function(preds, diversity = 1) {
   which.max(as.integer(stats::rmultinom(1, 1, preds)))
 }
 
-gerar_txt <- function(model, txt, diversity = 1.0, limit = 1000, maxlen = 40) {
+gerar_txt <- function(model, txt, diversity = 1.0, limit = 300, maxlen = 40) {
   chars <- sort(unique(txt))
   txt_index <- which(txt[-length(txt)] == '@')
   start_index <- sample(txt_index, size = 1) + 1L
